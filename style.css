@@ -1,0 +1,72 @@
+@font-face{
+    font-family: default-font;
+    src: url(./assets/font.ttf);
+}
+
+html {
+    background-color: rgb(200, 200, 200);
+}
+
+input {
+    display: none;
+}
+
+.card {
+    width: 250px;
+    height: 200px;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.subcard {
+    width:inherit;
+    height:calc(100% - 50px);
+    background-color: rgb(230, 100, 100);
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    text-align: center;
+}
+
+.subcard-title {
+    width: inherit;
+    height: 50px;
+    background-color: rgb(230, 230, 230);
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    overflow-x: hidden;
+}
+
+.card-text {
+    display: inline;
+    font-family: default-font;
+    color: rgb(50, 50, 50);
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+    top: 10px;
+    left: 10px;
+    white-space: nowrap;
+}
+
+.card-image {
+    height: 100%;
+}
+
+.progress-bar {
+    position:relative; 
+    bottom:0; 
+    left:0; 
+    width:0%; 
+    height:5px; 
+    background-color:rgb(150, 150, 150); 
+    margin-bottom:-5px;
+}
+
+#card-container {
+    width: 100%;
+    height:100%;
+    display:flex; 
+    align-items: flex-start; 
+    flex-wrap: wrap;
+    overflow-y: auto;
+}
